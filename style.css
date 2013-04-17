@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "thundercats";
+    src: url('font/thundercats.eot');
+    src: url('font/thundercats.eot?#iefix') format('embedded-opentype'),
+         url('font/thundercats.woff') format('woff'),
+         url('font/thundercats.ttf') format('truetype'),
+         url('font/thundercats.svg#thundercats') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #8B4513;
+}
+h1 {
+    font-family: "thundercats";
+    font-size: 90pt;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: normal;
+}
+h2 {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom:30px;
+    font-size: 40px;
+}
+/*sword css*/
+#swordOfOmens {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top:-250px;
+    width:400px;
+    margin: 0 auto;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+#blade {
+    overflow: hidden;
+    height: 600px;
+    width: 205px;
+    background: #C0C0C0;
+    position: relative;
+    left: 200px;
+    top: 100px;
+    background-image: linear-gradient(-30deg, #8B4513 89px, transparent 89px), linear-gradient(30deg, transparent 89px,#8B4513 89px), linear-gradient(55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), linear-gradient(-55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), linear-gradient(left, gray 0px,gray 1px, transparent 1px), linear-gradient(left, transparent 0px, white 105px, transparent 200px);
+    background-image: -webkit-linear-gradient(-30deg, #8B4513 89px, transparent 89px), -webkit-linear-gradient(30deg, transparent 89px,#8B4513 89px), -webkit-linear-gradient(55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -webkit-linear-gradient(-55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -webkit-linear-gradient(left, gray 0px,gray 1px, transparent 1px), -webkit-linear-gradient(left, transparent 0px, white 105px, transparent 200px);
+    background-image: -moz-linear-gradient(-30deg, #8B4513 89px, transparent 89px), -moz-linear-gradient(30deg, transparent 89px,#8B4513 89px), -moz-linear-gradient(55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -moz-linear-gradient(-55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -moz-linear-gradient(left, gray 0px,gray 1px, transparent 1px), -moz-linear-gradient(left, transparent 0px, white 105px, transparent 200px);
+    background-image: -o-linear-gradient(-30deg, #8B4513 89px, transparent 89px), -o-linear-gradient(30deg, transparent 89px,#8B4513 89px), -o-linear-gradient(55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -o-linear-gradient(-55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -o-linear-gradient(left, gray 0px,gray 1px, transparent 1px), -o-linear-gradient(left, transparent 0px, white 105px, transparent 200px);
+    background-image: -ms-linear-gradient(-30deg, #8B4513 89px, transparent 89px), -ms-linear-gradient(30deg, transparent 89px,#8B4513 89px), -ms-linear-gradient(55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -ms-linear-gradient(-55deg, transparent 89px,gray 89px, gray 91px, transparent 91px), -ms-linear-gradient(left, gray 0px,gray 1px, transparent 1px), -ms-linear-gradient(left, transparent 0px, white 105px, transparent 200px);    
+    background-repeat: no-repeat;
+    background-position: -1px 0, 104px -425px,-50px -350px,105px 140px, 105px 250px,0 0;
+}
+
+#subBlade1 {
+    height: 120px;
+    width: 205px;
+    background: Gray;
+    position: absolute;
+    bottom: 0;
+}
+
+#subBlade1:before {
+    content: "";
+    display: block;
+    height: 200px;
+    width: 200px;
+    background: #c0c0c0;
+    border-radius: 50%;
+    position: absolute;
+    top: -175px;
+    left: -80px;
+    border-bottom: 1px solid black;
+}
+
+#subBlade1:after {
+    content: "";
+    display: block;
+    height: 200px;
+    width: 200px;
+    background: #c0c0c0;
+    border-radius: 50%;
+    position: absolute;
+    top: -175px;
+    left: 80px;
+    border-bottom: 1px solid black;
+}
+
+#subBlade2 {
+    height: 305px;
+    width: 205px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 3;
+    border: 0;
+    margin-top: 0;
+    background-image: linear-gradient(left,black 0px, black 2px, transparent 1px), linear-gradient(left,grey 0px, grey 2px, transparent 1px), linear-gradient(-15deg, transparent 40px,black 40px, black 41px, gray 41px, gray 50px), linear-gradient(15deg, gray 40px,black 40px, black 41px, transparent 41px), linear-gradient(left, transparent 0px, white 105px, transparent 200px),linear-gradient(left, #c0c0c0 0px, #c0c0c0 300px);
+    background-image: -webkit-linear-gradient(left,black 0px, black 2px, transparent 1px), -webkit-linear-gradient(left,grey 0px, grey 2px, transparent 1px), -webkit-linear-gradient(-15deg, transparent 40px,black 40px, black 41px, gray 41px, gray 50px), -webkit-linear-gradient(15deg, gray 40px,black 40px, black 41px, transparent 41px), -webkit-linear-gradient(left, transparent 0px, white 105px, transparent 200px), -webkit-linear-gradient(left, #c0c0c0 0px, #c0c0c0 300px);
+    background-image: -moz-linear-gradient(left,black 0px, black 2px, transparent 1px), -moz-linear-gradient(left,grey 0px, grey 2px, transparent 1px), -moz-linear-gradient(-15deg, transparent 40px,black 40px, black 41px, gray 41px, gray 50px), -moz-linear-gradient(15deg, gray 40px,black 40px, black 41px, transparent 41px), -moz-linear-gradient(left, transparent 0px, white 105px, transparent 200px), -moz-linear-gradient(left, #c0c0c0 0px, #c0c0c0 300px);
+    background-image: -o-linear-gradient(left,black 0px, black 2px, transparent 1px), -o-linear-gradient(left,grey 0px, grey 2px, transparent 1px), -o-linear-gradient(-15deg, transparent 40px,black 40px, black 41px, gray 41px, gray 50px), -o-linear-gradient(15deg, gray 40px,black 40px, black 41px, transparent 41px), -o-linear-gradient(left, transparent 0px, white 105px, transparent 200px), -o-linear-gradient(left, #c0c0c0 0px, #c0c0c0 300px);
+    background-image: -ms-linear-gradient(left,black 0px, black 2px, transparent 1px), -ms-linear-gradient(left,grey 0px, grey 2px, transparent 1px), -ms-linear-gradient(-15deg, transparent 40px,black 40px, black 41px, gray 41px, gray 50px), -ms-linear-gradient(15deg, gray 40px,black 40px, black 41px, transparent 41px), -ms-linear-gradient(left, transparent 0px, white 105px, transparent 200px), -ms-linear-gradient(left, #c0c0c0 0px, #c0c0c0 300px);    
+    background-position: 105px 60px,105px 0px,65px 50px,105px 28px, 0 0, 0 -100px;
+
+    -webkit-background-size: 1px 180px,1px 180px, 40px 180px,50px 180px,100% 100%,100% 100%;
+    -moz-background-size: 1px 180px,1px 180px, 40px 180px,50px 180px,100% 100%,100% 100%;
+    background-size: 1px 180px,1px 180px, 40px 180px,50px 180px,100% 100%,100% 100%;
+    background-repeat: no-repeat;
+}
+
+#subBlade2:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-bottom: 1px solid black;
+    border-radius: 0 0 90% 0;
+    position: absolute;
+    left: 35px;
+    bottom: 27px;
+
+    -webkit-transform: rotate(208deg);
+    -moz-transform: rotate(208deg);
+    -o-transform: rotate(208deg);
+    -ms-transform: rotate(208deg);
+    transform: rotate(208deg);
+    background: grey;
+}
+
+#logo {
+    height: 200px;
+    width: 200px;
+    background: red;
+    border-radius: 50%;
+    border: 5px;
+    border-style: solid;
+    border-color: LightGray;
+    position: relative;
+    left: 200px;
+
+    -webkit-box-shadow: 0 0 2em 1em #fff;
+    box-shadow: 0 0 2em 1em #fff;
+    z-index: 5;
+
+    background-image: -webkit-radial-gradient(center, circle cover, DarkRed 20%, red 100%); 
+    background-image: -moz-radial-gradient(center, circle cover, DarkRed 20%, red 100%);  
+    background-image: -ms-radial-gradient(center, circle cover, DarkRed 20%, red 100%);
+    background-image: -o-radial-gradient(center, circle cover, DarkRed 20%, red 100%);
+}
+
+#logo:before {
+    content: "";
+    display: block;
+    height: 155px;
+    width: 155px;
+
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: black;
+    border-radius: 10px 1000px 10px 1000px;
+    position: relative;
+    left: -25px;
+    top: -27px;
+    z-index: 1;
+    padding: 50px;
+
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+}
+
+#base1 {
+    height: 100px;
+    width: 162px;
+    background: black;
+    position: relative;
+    left: 215px;
+    top: -50px;
+    z-index: -1;
+    border: 8px;
+    border-style: solid;
+    border-color: LightGray;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(-70deg, transparent 50px, LightGray 50px, LightGray 120px, transparent 120px), linear-gradient(70deg, transparent 40px, LightGray 40px, LightGray 80px, transparent 80px);
+    background-image: -webkit-linear-gradient(-70deg, transparent 50px, LightGray 50px, LightGray 120px, transparent 120px), -webkit-linear-gradient(70deg, transparent 40px, LightGray 40px, LightGray 80px, transparent 80px);
+    background-image: -moz-linear-gradient(-70deg, transparent 50px, LightGray 50px, LightGray 120px, transparent 120px), -moz-linear-gradient(70deg, transparent 40px, LightGray 40px, LightGray 80px, transparent 80px);
+    background-image: -o-linear-gradient(-70deg, transparent 50px, LightGray 50px, LightGray 120px, transparent 120px), -o-linear-gradient(70deg, transparent 40px, LightGray 40px, LightGray 80px, transparent 80px);
+    background-image: -ms-linear-gradient(-70deg, transparent 50px, LightGray 50px, LightGray 120px, transparent 120px), -ms-linear-gradient(70deg, transparent 40px, LightGray 40px, LightGray 80px, transparent 80px);    
+    background-position: -40px 50px,84px 42px;
+
+    -webkit-background-size: 125px 100%, 125px 100%, 10px 5px;
+    -moz-background-size: 125px 100%, 125px 100%, 10px 5px;
+    background-size: 125px 100%, 125px 100%, 10px 5px;
+}
+
+#base1:before {
+    content: "";
+    height: 80px;
+    width: 80px;
+    display: block;
+    background: #8B4513;
+    position: relative;
+    left: -50px;
+    top: 20px;
+    z-index: 1;
+    border-radius: 0 50% 50% 0;
+    border-right: 8px;
+    border-right-style: solid;
+    border-color: LightGray;
+}
+
+#base1:after {
+    content: "";
+    height: 80px;
+    width: 80px;
+    display: block;
+    background: #8B4513;
+    position: relative;
+    left: 128px;
+    top: -60px;
+    z-index: 1;
+    border-radius: 50% 0 0 50%;
+    border-left: 8px;
+    border-left-style: solid;
+    border-color: LightGray;
+}
+
+#spades {
+    height: 20px;
+    width: 40px;
+    background: LightGray;
+    border-radius: 50% 0 0 50%;
+    border-left: 1pt solid black;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    left: 286px;
+    top: -111px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(73deg, transparent 10px, black 10px), linear-gradient(-73deg, transparent 10px, black 10px);
+    background-image: -webkit-linear-gradient(73deg, transparent 10px, black 10px), -webkit-linear-gradient(-73deg, transparent 10px, black 10px);
+    background-image: -moz-linear-gradient(73deg, transparent 10px, black 10px), -moz-linear-gradient(-73deg, transparent 10px, black 10px);
+    background-image: -o-linear-gradient(73deg, transparent 10px, black 10px), -o-linear-gradient(-73deg, transparent 10px, black 10px);
+    background-image: -ms-linear-gradient(73deg, transparent 10px, black 10px), -ms-linear-gradient(-73deg, transparent 10px, black 10px);    
+    background-position: 5px -19px,5px 9px;
+
+    -webkit-background-size: 31px 30px, 31px 30px;
+    -moz-background-size: 31px 30px, 31px 30px;
+    background-size: 31px 30px, 31px 30px;
+    z-index: 4;
+}
+
+#spades:after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 16px;
+    background: LightGray;
+    border-left: 1px solid black;
+    position: absolute;
+    right: 40px;
+    top: 2px;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, transparent 5px, black 5px,black 6px, transparent 6px), linear-gradient(-45deg, transparent 5px, black 5px,black 6px, transparent 6px);
+    background-image: -webkit-linear-gradient(45deg, transparent 5px, black 5px,black 6px, transparent 6px), -webkit-linear-gradient(-45deg, transparent 5px, black 5px,black 6px, transparent 6px);
+    background-image: -moz-linear-gradient(45deg, transparent 5px, black 5px,black 6px, transparent 6px), -moz-linear-gradient(-45deg, transparent 5px, black 5px,black 6px, transparent 6px);
+    background-image: -o-linear-gradient(45deg, transparent 5px, black 5px,black 6px, transparent 6px), -o-linear-gradient(-45deg, transparent 5px, black 5px,black 6px, transparent 6px);
+    background-image: -ms-linear-gradient(45deg, transparent 5px, black 5px,black 6px, transparent 6px), -ms-linear-gradient(-45deg, transparent 5px, black 5px,black 6px, transparent 6px);    
+    background-position: 0px -7px,0px 7px;
+}
+
+#base2 {
+    height: 50px;
+    width: 220px;
+    background: LightGray;
+    border: 2pt solid black;
+    position: relative;
+    left: 195px;
+    top: -100px;
+    z-index: 3;
+
+    -webkit-box-shadow: 0em 0.5em 3em rgba(50, 50, 50, 0.7);
+    box-shadow: 0em 0.5em 3em rgba(50, 50, 50, 0.7);
+}
+
+#base2:after {
+    content: "";
+    display: block;
+    width: 212px;
+    height: 50px;
+    border-bottom: 1px solid black;
+    z-index: 2;
+    background: LightGray;
+    position: relative;
+    left: 4px;
+    top: 8px;
+    background-image: linear-gradient(-80deg, black 40px, transparent 40px), linear-gradient(80deg, transparent 40px, black 40px), linear-gradient(left,black,black), linear-gradient(left,black 0px,black 1px, transparent 1px), linear-gradient(left,transparent 0px,transparent 211px,black 212px);
+    background-image: -webkit-linear-gradient(-80deg, black 40px, transparent 40px), -webkit-linear-gradient(80deg, transparent 40px, black 40px), -webkit-linear-gradient(left,black,black), -webkit-linear-gradient(left,black 0px,black 1px, transparent 1px), -webkit-linear-gradient(left,transparent 0px,transparent 211px,black 212px);
+    background-image: -moz-linear-gradient(-80deg, black 40px, transparent 40px), -moz-linear-gradient(80deg, transparent 40px, black 40px), -moz-linear-gradient(left,black,black), -moz-linear-gradient(left,black 0px,black 1px, transparent 1px), -moz-linear-gradient(left,transparent 0px,transparent 211px,black 212px);
+    background-image: -o-linear-gradient(-80deg, black 40px, transparent 40px), -o-linear-gradient(80deg, transparent 40px, black 40px), -o-linear-gradient(left,black,black), -o-linear-gradient(left,black 0px,black 1px, transparent 1px), -o-linear-gradient(left,transparent 0px,transparent 211px,black 212px);
+    background-image: -ms-linear-gradient(-80deg, black 40px, transparent 40px), -ms-linear-gradient(80deg, transparent 40px, black 40px), -ms-linear-gradient(left,black,black), -ms-linear-gradient(left,black 0px,black 1px, transparent 1px), -ms-linear-gradient(left,transparent 0px,transparent 211px,black 212px);    
+    background-position: -95px 15px,105px 10px,0 -30px,0 0,0 0;
+    background-repeat: no-repeat;
+}
+
+#baseL {
+    width: 250px;
+    height: 150px;
+    background: LightGray;
+    position: absolute;
+    left: -251px;
+    top: -1px;
+    border-radius: 99% 0 0 0;
+}
+
+#baseL:before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 100px;
+    background: LightGray;
+    position: relative;
+    left: 45px;
+    background-image: linear-gradient(50deg, #8B4513 78px, LightGray 78px);
+    background-image: -webkit-linear-gradient(50deg, #8B4513 78px, LightGray 78px);
+    background-image: -moz-linear-gradient(50deg, #8B4513 78px, LightGray 78px);
+    background-image: -o-linear-gradient(50deg, #8B4513 78px, LightGray 78px);
+    background-image: -ms-linear-gradient(50deg, #8B4513 78px, LightGray 78px);
+    
+    z-index: -1;
+}
+
+#baseL:after {
+    content: "";
+    display: block;
+    width: 261px;
+    height: 150px;
+    background: #8B4513;
+    position: absolute;
+    left: -8px;
+    top: 50px;
+    border-radius: 99% 0 0 0;
+    z-index: 1;
+    border-top: 1px solid black;
+
+    -webkit-box-shadow: inset 0.2em 1em 0.5em rgba(50, 50, 50, 0.2);
+    box-shadow: inset 0.2em 1em 0.5em rgba(50, 50, 50, 0.2);
+}
+
+#baseLDeco {
+    width: 120px;
+    height: 30px;
+    background: black;
+    position: relative;
+    top: -90px;
+    left: 120px;
+    z-index: 1;
+}
+
+#baseLDeco:before {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 200px;
+    background: black;
+    border-radius: 99% 0 0 0;
+    position: relative;
+    left: -80px;
+}
+
+#baseLDeco:after {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 210px;
+    background: LightGray;
+    border-radius: 99% 0 0 0;
+    position: absolute;
+    left: -88px;
+    top: 20px;
+}
+
+#baseR {
+    width: 250px;
+    height: 150px;
+    background: LightGray;
+    position: absolute;
+    left: 222px;
+    top: -1px;
+    border-radius: 0 299% 0 0;
+}
+
+#baseR:before {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 100px;
+    background: LightGray;
+    position: relative;
+    left: 1px;
+    top: 1px;
+    background-image: linear-gradient(-50deg, LightGray 130px, #8B4513 130px);
+    background-image: -webkit-linear-gradient(-50deg, LightGray 130px, #8B4513 130px);
+    background-image: -moz-linear-gradient(-50deg, LightGray 130px, #8B4513 130px);
+    background-image: -o-linear-gradient(-50deg, LightGray 130px, #8B4513 130px);
+    background-image: -ms-linear-gradient(-50deg, LightGray 130px, #8B4513 130px);
+    
+    background-position: 0px 0;
+    z-index: -1;
+}
+
+#baseR:after {
+    content: "";
+    display: block;
+    width: 261px;
+    height: 150px;
+    background: #8B4513;
+    position: absolute;
+    top: 50px;
+    left: -2px;
+    border-radius: 0 99% 0 0;
+    z-index: 1;
+    border-top: 1px solid black;
+
+    -webkit-box-shadow: inset -0.3em 0.7em 0.5em rgba(50, 50, 50, 0.2);
+    box-shadow: inset -0.3em 0.7em 0.5em rgba(50, 50, 50, 0.2);
+}
+
+#baseRDeco {
+    width: 120px;
+    height: 30px;
+    background: black;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+#baseRDeco:before {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 200px;
+    background: black;
+    border-radius: 0 99% 0 0;
+    position: relative;
+    left: 0px;
+}
+
+#baseRDeco:after {
+    content: "";
+    display: block;
+    height: 100px;
+    width: 210px;
+    background: LightGray;
+    border-radius: 0 99% 0 0;
+    position: absolute;
+    left: -2px;
+    top: 20px;
+}
+
+#punho {
+    width: 90px;
+    height: 300px;
+    background: LightGray;
+    position: relative;
+    left: 262px;
+    top: -93px;
+    border: 1pt solid black;
+
+    -webkit-box-shadow: 0em 0em 2em rgba(50, 50, 50, 1);
+    box-shadow: 0em 0em 2em rgba(50, 50, 50, 1);
+    z-index: 2;
+    background-image: linear-gradient(-10deg, transparent 0px, white 100px, transparent 200px);
+    background-image: -webkit-linear-gradient(-10deg, transparent 0px, white 100px, transparent 200px);
+    background-image: -moz-linear-gradient(-10deg, transparent 0px, white 100px, transparent 200px);
+    background-image: -o-linear-gradient(-10deg, transparent 0px, white 100px, transparent 200px);
+    background-image: -ms-linear-gradient(-10deg, transparent 0px, white 100px, transparent 200px);
+    
+}
+
+.gomo {
+    width: 100px;
+    height: 10px;
+    background: LightGray;
+    border-radius: 25%;
+    border: 1pt solid black;
+    position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    left: -6px;
+
+    -webkit-box-shadow: 0em 0.5em 2em 0.05em #000;
+    box-shadow: 0em 0.5em 2em 0.05em #000;
+}
+
+#pomo {
+    height: 80px;
+    width: 130px;
+    background: LightGrey;
+    border: 1pt solid black;
+    border-radius: 0 0 50% 50%;
+    position: relative;
+    left: 243px;
+    top: -94px;
+    -webkit-box-shadow: 0em 0.7em 0.5em rgba(50, 50, 50, 0.2);
+    box-shadow: 0em 0.7em 0.5em rgba(50, 50, 50, 0.2);
+    background-image: -webkit-radial-gradient(60px 60px, 40px 40px, LightGray 0%, white 60%, LightGray 100%); 
+    background-image: -moz-radial-gradient(60px 60px,40px 40px, LightGray 0%, white 60%, LightGray 100%);  
+    background-image: -ms-radial-gradient(60px 60px, 40px 40px, LightGray 0%, white 60%, LightGray 100%);
+    background-image: -o-radial-gradient(60px 60px, 40px 40px, LightGray 0%, white 60%, LightGray 100%);
+}
+
+#pomo:before {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 25px;
+    background: LightGray;
+    background-image: linear-gradient(-26deg, #8B4513 24px,black 24px, black 25px, LightGray 25px);
+    background-image: -webkit-linear-gradient(-26deg, #8B4513 24px,black 24px, black 25px, LightGray 25px);
+    background-image: -moz-linear-gradient(-26deg, #8B4513 24px,black 24px, black 25px, LightGray 25px);
+    background-image: -o-linear-gradient(-26deg, #8B4513 24px,black 24px, black 25px, LightGray 25px);
+    background-image: -ms-linear-gradient(-26deg, #8B4513 24px,black 24px, black 25px, LightGray 25px);    
+    background-position: 0px 0px;
+    position: relative;
+    top: -5px;
+    left: -10px;
+}
+
+#pomo:after {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 25px;
+    background: LightGray;
+    background-image: linear-gradient(26deg,LightGray 16px, black 16px, black 17px, #8B4513 17px);
+    background-image: -webkit-linear-gradient(26deg,LightGray 16px, black 16px, black 17px, #8B4513 17px);
+    background-image: -moz-linear-gradient(26deg,LightGray 16px, black 16px, black 17px, #8B4513 17px);
+    background-image: -o-linear-gradient(26deg,LightGray 16px, black 16px, black 17px, #8B4513 17px);
+    background-image: -ms-linear-gradient(26deg,LightGray 16px, black 16px, black 17px, #8B4513 17px);    
+    background-position: 0px 0px;
+    position: absolute;
+    top: -2px;
+    left: 112px;
+}
+
+#pomoDeco {
+    height: 10px;
+    width: 150px;
+    background: LightGrey;
+    border: 1pt solid black;
+    border-radius: 25%;
+    position: relative;
+    top: -14px;
+    left: -10px;
+    z-index: 1;
+
+    -webkit-box-shadow: 0em 0.5em 3em 0.05em #000;
+    box-shadow: 0em 0.5em 3em 0.05em #000;
+}
+
+#pomoDeco:before {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 24px;
+    background: blue;
+    border-radius: 50% 0 0 50%;
+    border-left: 1pt solid black;
+    border-right: 1pt solid black;
+    z-index: 2;
+    background-image: linear-gradient(55deg,blue 16px, black 16px, black 17px, LightGray 17px), linear-gradient(-55deg,blue 16px, black 16px, black 17px, LightGray 17px);
+    background-image: -webkit-linear-gradient(55deg,blue 16px, black 16px, black 17px, LightGray 17px), -webkit-linear-gradient(-55deg,blue 16px, black 16px, black 17px, LightGray 17px);
+    background-image: -moz-linear-gradient(55deg,blue 16px, black 16px, black 17px, LightGray 17px), -moz-linear-gradient(-55deg,blue 16px, black 16px, black 17px, LightGray 17px);
+    background-image: -o-linear-gradient(55deg,blue 16px, black 16px, black 17px, LightGray 17px), -o-linear-gradient(-55deg,blue 16px, black 16px, black 17px, LightGray 17px);
+    background-image: -ms-linear-gradient(55deg,blue 16px, black 16px, black 17px, LightGray 17px), -ms-linear-gradient(-55deg,blue 16px, black 16px, black 17px, LightGray 17px);    
+    background-position: 0px -8px,0px 8px;
+    background-repeat: no-repeat;
+
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    top: -24px;
+    left: 60px;
+}
+/*end of sword css*/
+
+#text{
+    margin-top:-650px;
+    width:100%;
+    background: #00393E; 
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px 0;
+}
+p{
+    font-size: 20pt;
+    margin-top: 20px;
+}
+iframe{
+    margin-top: 20px;
+}
